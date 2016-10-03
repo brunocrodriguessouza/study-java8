@@ -1,9 +1,8 @@
 package br.com.alura;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class SortNames {
 	public static void main(String[] args) {
@@ -13,11 +12,11 @@ public class SortNames {
 		names.add("Gabriel");
 		names.add("Filipe");
 		
-		Comparator<String> comparator = new ComparatorOfNamesByLength();
-		names.sort(comparator);
+		Comparator<String> comparator = new 
 		
-		Consumer<String> consumer = new ConsumerOfNames();
-		names.forEach(consumer);
+		for (String name : names) {
+			System.out.println(name);
+		}
 	}
 }
 
